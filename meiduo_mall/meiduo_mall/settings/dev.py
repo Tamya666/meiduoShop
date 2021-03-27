@@ -41,8 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'meiduo_mall.apps.users',
-    # 'users',
+    # 'meiduo_mall.apps.users',
+    'users',  # 用户模块
+    'contents',  # 首页广告模块
 ]
 
 MIDDLEWARE = [
@@ -204,3 +205,6 @@ LOGGING = {
         },
     }
 }
+
+# 指定自定义的用户类模型
+AUTH_USER_MODEL = 'users.User'
