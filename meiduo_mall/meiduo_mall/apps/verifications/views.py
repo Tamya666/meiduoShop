@@ -9,7 +9,6 @@ from django_redis import get_redis_connection
 from verifications.libs.captcha.captcha import captcha
 from verifications import constants
 from meiduo_mall.utils.response_code import RETCODE
-from verifications.libs.yuntongxun.ccp_sms import CCP
 from celery_tasks.sms.tasks import send_sms_code
 
 # 创建日志输出器
